@@ -1,0 +1,86 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #cfd8dc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 14px;
+}
+
+.hotel-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px;
+  padding: 10px;
+  flex: 1;
+}
+
+.calendar-cell {
+  background-color: #eceff1;
+  border: 1px solid #b0bec5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+  position: relative; /* add position relative to the cell */
+}
+
+.experience-item {
+  background-color: #81c784;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: move;
+  position: relative; /* add position relative to the experience item */
+}
+
+.delete-experience {
+  position: absolute; /* add position absolute to the delete icon */
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-experience {
+  position: absolute; /* add position absolute to the add icon */
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hotel-form {
+  padding: 10px;
+  background-color: #cfd8dc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+input {
+  margin-left: 5px;
+}
